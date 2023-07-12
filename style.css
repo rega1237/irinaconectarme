@@ -6,10 +6,10 @@
 
 @font-face {
   font-family: Angelface;
-  src: url("fonts/Angelface.otf") format("opentype");
+  src: url("assets/fonts/Angelface.otf") format("opentype");
 }
 
 @font-face {
   font-family: Kaoly;
-  src: url("fonts/Kaoly.ttf") format("truetype");
+  src: url("assets/fonts/Kaoly.ttf") format("truetype");
 }

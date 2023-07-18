@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/e_icon.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <title>Presencial</title>
+  </head>
+  <body>
+    <section id="header_presencial" class="pt-5 bg-cream">
+      <div class="flex flex-col lg:flex-row items-center lg:justify-center">
+        <div class="flex w-[60%]">
+          <img
+            class="self-center"
+            src="assets/images/conectarme.png"
+            alt="conectarme titulo"
+          />
+        </div>
+        <div class="w-[30%] lg:self-end">
+          <img
+            src="assets/images/irina_presencial.png"
+            alt="Irina sosteniendo libro"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="points"
+      class="text-center text-sm pb-12 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
+    >
+      <div class="w-[70%] mx-auto pt-10 lg:pt-20">
+        <div>
+          <div
+            class="text-center text-[1.5rem] mb-[-1rem] lg:text-[4rem] lg:mb-[-2rem] rotate-[-5deg]"
+          >
+            <h2 class="font-angel">Houston</h2>
+          </div>
+          <div class="w-[60%] lg:w-[40%] text-center mx-auto">
+            <img src="assets/images/conectarme_sin.png" alt="conectarme" />
+          </div>
+        </div>
+
+        <div
+          class="lg:w-[70%] lg:mx-auto lg:text-lg lg:leading-7 font-mont font-bold"
+        >
+          <p>
+            Conectarme es una experiencia creada para mujeres que quieren
+            activar su autoconfianza y priorizar su salud mental.
+          </p>
+
+          <p class="mt-5">
+            Es un taller completamente vivencial, donde las participantes
+            aprenden a reconocer su <span class="text-pink">VOZ</span>,
+            descubren creencias limitantes sobre sí mismas, desarrollan la
+            gestión emocional y empiezan a decir
+            <span class="text-pink font-bold"
+              >Sin sin miedo y No sin culpa.</span
+            >
+            Y además se llevan un plan de acción para trabajar en ellas.
+          </p>
+
+          <p class="mt-5">
+            Utilizamos el método de Coaching
+            <span class="text-pink">Points of you,</span> una herramienta que
+            combina la emoción y la lógica y te ayuda a ver nuevos puntos de
+            vistas a través de dinámicas conmovedoras y reveladoras.
+          </p>
+        </div>
+
+        <div class="pt-5">
+          <div class="lg:flex lg:justify-center">
+            <div class="flex items-center lg:justify-end">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/calendar.png" alt="icono calendario" />
+              </div>
+              <div class="font-mont text-left">
+                <p>FECHA DEL EVENTO</p>
+                <p class="font-bold text-pink">SAB 08.26.23</p>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/clock.png" alt="icono reloj" />
+              </div>
+              <div class="font-mont text-left">
+                <p>HORA</p>
+                <p class="font-bold text-pink">10:00 AM A 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center lg:justify-center">
+            <div class="basis-[30%] lg:basis-[10%]">
+              <img src="assets/images/gps_icon.png" alt="icono gps" />
+            </div>
+            <div class="font-mont text-left">
+              <p>LUGAR</p>
+              <p class="font-bold text-pink lg:text-lg">NARANJA DULCE STUDIOS</p>
+              <p class="text-xs lg:text-sm">
+                1810 First Oaks St suite 100, Richmond, TX 77406
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 font-mont font-bold">
+            <h2 class="font-angel font-normal text-[2.5rem]">¿Estás lista ?</h2>
+            <div class="w-[40%] lg:w-[20%] mx-auto text-center">
+              <img src="assets/images/lentes.png" alt="lentes pasta negra" />
+            </div>
+            <div class="flex gap-3 justify-center w-[80%] mx-auto pt-3">
+              <a
+                id="checkout"
+                class="flex bg-pink p-3 lg:p-6 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
+              >
+                <p>Reservar (quiero comprar mi entrada)</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/payment.js"></script>
+  </body>
+</html>

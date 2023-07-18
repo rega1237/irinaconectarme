@@ -19,3 +19,10 @@
   margin: 0;
   padding: 0;
 }
+
+.pos-bubble {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  background-position-y: bottom;
+}

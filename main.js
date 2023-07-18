@@ -1,12 +1,12 @@
 var stripe = Stripe(
-  "pk_test_51NReEuIGlS0wzkKXiCcVibiPlHNO9UI1vfWD4ZMwGibWCjgpJrgVHBIPpNybbznORJRqbN1bOuffMtYjKBofEQyc00CNFnCbkp"
+  "pk_live_51NReEuIGlS0wzkKX1VMpnQgRpvPkjrDlU1EPXTKUKsVTyBuNPXeoGyQRLTRAuUp16uTrgWjJKamTdh2fFfsXLxGZ00lKKS2BHt"
 );
 
 document.getElementById("checkout").addEventListener("click", (e) => {
   stripe.redirectToCheckout({
     lineItems: [
       {
-        price: "price_1NUqJIIGlS0wzkKXE194Qc2c",
+        price: "price_1NUpm6IGlS0wzkKXy6r7NiI3",
         quantity: 1,
       }
     ],

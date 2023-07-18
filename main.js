@@ -11,8 +11,8 @@ document.getElementById("checkout").addEventListener("click", (e) => {
       }
     ],
     mode: "payment",
-    successUrl: "http://localhost:5173/success.html",
-    cancelUrl: "http://localhost:5173/presencial.html",
+    successUrl: "https://irinafaneite.com/success",
+    cancelUrl: "https://irinafaneite.com/presencial",
   }).then(function (result) {
     if (result.ok) {
       console.log("ok");

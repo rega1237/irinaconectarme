@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://js.stripe.com/v3/"></script>
     <title>Presencial</title>
   </head>
   <body>
-    <section id="header" class="pt-5 bg-cream">
-      <div class="flex justify-center">
+    <section id="header_presencial" class="pt-5 bg-cream">
+      <div class="flex flex-col lg:flex-row items-center lg:justify-center">
         <div class="flex w-[60%]">
           <img
             class="self-center"
@@ -16,7 +17,7 @@
             alt="conectarme titulo"
           />
         </div>
-        <div class="hidden lg:block w-[30%] self-end">
+        <div class="w-[30%] lg:self-end">
           <img
             src="assets/images/irina_presencial.png"
             alt="Irina sosteniendo libro"
@@ -27,7 +28,7 @@
 
     <section
       id="points"
-      class="text-center text-sm pb-9 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
+      class="text-center text-sm pb-12 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
     >
       <div class="w-[70%] mx-auto pt-10 lg:pt-20">
         <div>
@@ -103,10 +104,25 @@
               </p>
             </div>
           </div>
+
+          <div class="mt-8 font-mont font-bold">
+            <h2 class="font-angel font-normal text-[2.5rem]">¿Estás lista ?</h2>
+            <div class="w-[40%] lg:w-[20%] mx-auto text-center">
+              <img src="assets/images/lentes.png" alt="lentes pasta negra" />
+            </div>
+            <div class="flex gap-3 justify-center w-[80%] mx-auto pt-3">
+              <a
+                id="checkout"
+                class="flex bg-pink p-3 lg:p-6 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
+              >
+                <p>Reservar (quiero comprar mi entrada)</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/payment.js"></script>
   </body>
 </html>

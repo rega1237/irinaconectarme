@@ -1,3 +1,4 @@
+/*
 var stripe = Stripe(
   "pk_live_51NReEuIGlS0wzkKX1VMpnQgRpvPkjrDlU1EPXTKUKsVTyBuNPXeoGyQRLTRAuUp16uTrgWjJKamTdh2fFfsXLxGZ00lKKS2BHt"
 );
@@ -21,3 +22,4 @@ document.getElementById("checkout").addEventListener("click", (e) => {
     }
   });
 });
+*/

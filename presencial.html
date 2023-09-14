@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/e_icon.png">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://js.stripe.com/v3/"></script>
-    <title>Presencial</title>
-  </head>
-  <body>
-    <section id="header_presencial" class="pt-5 bg-cream">
-      <div class="flex flex-col lg:flex-row items-center lg:justify-center">
-        <div class="flex w-[60%]">
-          <img
-            class="self-center"
-            src="assets/images/conectarme.png"
-            alt="conectarme titulo"
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/images/e_icon.png">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('476bXsavRQ_1pGv8O');
+        })();
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+  <title>Presencial</title>
+</head>
+
+<body>
+  <section id="header_presencial" class="pt-5 bg-cream">
+    <div class="flex flex-col lg:flex-row items-center lg:justify-center">
+      <div class="flex w-[60%]">
+        <img class="self-center" src="assets/images/conectarme.png" alt="conectarme titulo" />
+      </div>
+      <div class="w-[30%] lg:self-end">
+        <img src="assets/images/irina_presencial.png" alt="Irina sosteniendo libro" />
+      </div>
+    </div>
+  </section>
+
+  <section id="points" class="text-center text-sm pb-12 bg-[url('/assets/images/bubbles_1.png')] pos-bubble">
+    <div class="w-[70%] mx-auto pt-10 lg:pt-20">
+      <div>
+        <div class="text-center text-[1.5rem] mb-[-1rem] lg:text-[4rem] lg:mb-[-2rem] rotate-[-5deg]">
+          <h2 class="font-angel">Houston</h2>
         </div>
-        <div class="w-[30%] lg:self-end">
-          <img
-            src="assets/images/irina_presencial.png"
-            alt="Irina sosteniendo libro"
-          />
+        <div class="w-[60%] lg:w-[40%] text-center mx-auto">
+          <img src="assets/images/conectarme_sin.png" alt="conectarme" />
         </div>
       </div>
-    </section>
 
-    <section
-      id="points"
-      class="text-center text-sm pb-12 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
-    >
-      <div class="w-[70%] mx-auto pt-10 lg:pt-20">
-        <div>
+      <div class="lg:w-[70%] lg:mx-auto lg:text-lg lg:leading-7 font-mont font-bold">
+        <p>
+          Conectarme es una experiencia creada para mujeres que quieren
+          activar su autoconfianza y priorizar su salud mental.
+        </p>
+
+        <p class="mt-5">
+          Es un taller completamente vivencial, donde las participantes
+          aprenden a reconocer su <span class="text-pink">VOZ</span>,
+          descubren creencias limitantes sobre sí mismas, desarrollan la
+          gestión emocional y empiezan a decir
+          <span class="text-pink font-bold">Si sin miedo y No sin culpa.</span>
+          Y además se llevan un plan de acción para trabajar en ellas.
+        </p>
+
+        <p class="mt-5">
+          Utilizamos el método de Coaching
+          <span class="text-pink">Points of you,</span> una herramienta que
+          combina la emoción y la lógica y te ayuda a ver nuevos puntos de
+          vistas a través de dinámicas conmovedoras y reveladoras.
+        </p>
+      </div>
+
+      <div class="pt-5">
+        <div class="lg:flex lg:justify-center">
+          <div class="flex items-center lg:justify-center">
+            <div class="basis-[30%] lg:basis-[20%]">
+              <img src="assets/images/calendar.png" alt="icono calendario" />
+            </div>
+            <div class="font-mont text-left text-lg">
+              <p>FECHA SEGUNDA EDICIÓN</p>
+              <p class="font-bold text-pink text-lg">DOM 12.10.23</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col max-w-4xl md:h-56 bg-pink rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
+          <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-700">
+            <div class="py-6 px-8 md:py-0">
+              <h2 class="font-angel text-[4rem] text-cream">Houston</h2>
+              <h2 class="text-cream text-[1.5rem] font-bold mt-3 md:text-gray-100">Segunda Edición</h2>
+              <p class="text-md mt-3">¡Prepárate para la Segunda Edición <span
+                  class="text-cream font-bold">CONECTARME</span> en Houston, Deja tu email para enviarte toda la información!
+              </p>
+            </div>
+          </div>
           <div
-            class="text-center text-[1.5rem] mb-[-1rem] lg:text-[4rem] lg:mb-[-2rem] rotate-[-5deg]"
-          >
-            <h2 class="font-angel">Houston</h2>
-          </div>
-          <div class="w-[60%] lg:w-[40%] text-center mx-auto">
-            <img src="assets/images/conectarme_sin.png" alt="conectarme" />
+            class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 md:border-b-[#E78C98] md:border-b-8  bg-cream">
+            <form id="contact-form" >
+              <p id="label" class="text-pink p-2 self-start font-bold"></p>
+              <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
+                <input
+                  class="py-3 px-4 bg-gray-200 text-gray-800 border-pink border-2 outline-none placeholder-gray-500 focus:bg-gray-100"
+                  type="text" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Quiero Asistir" class="py-3 px-4 bg-pink text-cream font-semibold uppercase hover:bg-gray-600">
+              </div>
+            </form>
           </div>
         </div>
-
-        <div
-          class="lg:w-[70%] lg:mx-auto lg:text-lg lg:leading-7 font-mont font-bold"
-        >
-          <p>
-            Conectarme es una experiencia creada para mujeres que quieren
-            activar su autoconfianza y priorizar su salud mental.
-          </p>
-
-          <p class="mt-5">
-            Es un taller completamente vivencial, donde las participantes
-            aprenden a reconocer su <span class="text-pink">VOZ</span>,
-            descubren creencias limitantes sobre sí mismas, desarrollan la
-            gestión emocional y empiezan a decir
-            <span class="text-pink font-bold"
-              >Si sin miedo y No sin culpa.</span
-            >
-            Y además se llevan un plan de acción para trabajar en ellas.
-          </p>
-
-          <p class="mt-5">
-            Utilizamos el método de Coaching
-            <span class="text-pink">Points of you,</span> una herramienta que
-            combina la emoción y la lógica y te ayuda a ver nuevos puntos de
-            vistas a través de dinámicas conmovedoras y reveladoras.
-          </p>
-        </div>
-
+      </div>
+      <!--
         <div class="pt-5">
           <div class="lg:flex lg:justify-center">
             <div class="flex items-center lg:justify-end">
@@ -122,9 +153,11 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      -->
+    </div>
+  </section>
 
-    <script type="module" src="main.js"></script>
-  </body>
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>

@@ -8,6 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         presencial: resolve(__dirname, 'presencial.html'),
         success: resolve(__dirname, 'success.html'),
+        online: resolve(__dirname, 'online.html'),
       },
     },
   },

@@ -70,13 +70,13 @@ window.onload = function () {
 };
 */
 
-buttonShow = document.getElementById("button-show-taller");
-modalTaller = document.getElementById("modal-taller");
-closeButton = document.getElementById("close-button-taller")
+const buttonShow = document.getElementById("button-show-taller");
+const modalTaller = document.getElementById("modal-taller");
+const closeButton = document.getElementById("close-button-taller")
 
-buttonShowTallerSesion = document.getElementById("button-show-taller-sesion");
-modalTallerSesion = document.getElementById("modal-taller-sesion");
-closeButtonTallerSesion = document.getElementById("close-button-taller-sesion")
+const buttonShowTallerSesion = document.getElementById("button-show-taller-sesion");
+const modalTallerSesion = document.getElementById("modal-taller-sesion");
+const closeButtonTallerSesion = document.getElementById("close-button-taller-sesion")
 
 buttonShow.addEventListener("click", () => {
   modalTaller.classList.remove("hidden")

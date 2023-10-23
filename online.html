@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/e_icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("476bXsavRQ_1pGv8O");
+      })();
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>Online</title>
+  </head>
+
+  <body>
+    <section id="header_presencial" class="pt-5 bg-cream">
+      <div
+        class="flex flex-wrap-reverse lg:flex-wrap lg:flex-row justify-center items-center"
+      >
+        <div class="lg:flex lg:w-[40%] w-[30%]">
+          <img
+            class="self-center"
+            src="assets/images/foto_titulo_online.png"
+            alt="conectarme titulo"
+          />
+        </div>
+        <div class="w-[50%] lg:p-0 py-6">
+          <img
+            class="hidden lg:block"
+            src="assets/images/titulo_online.png"
+            alt="Irina sosteniendo libro"
+          />
+          <img
+            class="lg:hidden block"
+            src="assets/images/conectarme.png"
+            alt="Irina sosteniendo libro"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="points"
+      class="text-center text-sm pb-12 lg:bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
+    >
+      <div class="w-[70%] mx-auto pt-10 lg:pt-20">
+        <div>
+          <div class="w-[30%] lg:w-[20%] lg:mb-[-40px] text-center mx-auto">
+            <img src="assets/images/taller_online.png" alt="conectarme" />
+          </div>
+          <div
+            class="w-[60%] mt-[-20px] lg:mt-0 lg:w-[40%] text-center mx-auto"
+          >
+            <img src="assets/images/conectarme_sin.png" alt="conectarme" />
+          </div>
+        </div>
+
+        <div class="pt-10 w-[70%] mx-auto">
+          <h3 class="font-angel text-[3rem] lg:text-[4.5rem]">¿Qué es?</h3>
+          <p class="font-mont font-bold lg:text-[1rem] pt-5">
+            Una experiencia para mujeres que quieren activar su autoconfianza
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5 mt-3 lg:w-[60%] lg:pt-5 mx-auto">
+          <div class="lg:w-[80%] lg:mx-auto">
+            <div>
+              <h3 class="font-angel text-[3rem] lg:text-[4rem] pt-5 pb-5">
+                Es para ti sí:
+              </h3>
+            </div>
+            <ul class="w-[80%] mx-auto lg:mx-0 lg:w-full lg:font-bold">
+              <li class="flex mt-4 gap-1">
+                <div class="w-[20px]">
+                  <img src="assets/images/list_cor.png" alt="check corazon" />
+                </div>
+                <p class="font-mont text-sm w-[90%] text-left lg:text-[1rem]">
+                  Quieres aumentar tu seguridad y dejar de dudar en tu
+                  potencial.
+                </p>
+              </li>
+              <li class="flex mt-4 gap-1">
+                <div class="w-[20px]">
+                  <img src="assets/images/list_cor.png" alt="check corazon" />
+                </div>
+                <p class="font-mont text-sm w-[90%] text-left lg:text-[1rem]">
+                  Necesitas descubrir las creencias que limitan tu
+                  autoconfianza.
+                </p>
+              </li>
+              <li class="flex mt-4 gap-1">
+                <div class="w-[20px]">
+                  <img src="assets/images/list_cor.png" alt="check corazon" />
+                </div>
+                <p class="font-mont text-sm w-[90%] text-left lg:text-[1rem]">
+                  Estás lista para decir Si sin miedo y NO sin culpa.
+                </p>
+              </li>
+              <li class="flex mt-4 gap-1">
+                <div class="w-[20px]">
+                  <img src="assets/images/list_cor.png" alt="check corazon" />
+                </div>
+                <p class="font-mont text-sm w-[90%] text-left lg:text-[1rem]">
+                  Prefieres ser poderosa que ser aceptada y querida por otros.
+                </p>
+              </li>
+              <li class="flex mt-4 gap-1">
+                <div class="w-[20px]">
+                  <img src="assets/images/list_cor.png" alt="check corazon" />
+                </div>
+                <p class="font-mont text-sm w-[90%] text-left lg:text-[1rem]">
+                  Quieres ser libre de ser TU, decidir por ti y abrazar las
+                  opotunidades que la vida te da.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-sm pt-12 pb-9">
+          <h3 class="font-angel text-[3rem] lg:text-[4.5rem]">Utilizamos</h3>
+          <h3
+            class="font-mont text-pink font-bold text-[1rem] lg:text-[2rem] pt-6"
+          >
+            FACES DE POINTS OF YOU
+          </h3>
+
+          <div
+            class="lg:w-[60%] justify-center gap-3 flex mx-auto items-center pt-3"
+          >
+            <div
+              class="text-center lg:text-justify w-[80%] lg:w-[70%] self-center"
+            >
+              <p class="font-mont font-bold text-[1rem] pt-4">
+                En nuestro encuentro online trabajaremos desde la vivencia, no
+                desde el análisis, desde la conexión, utilizaremos el
+                <span class="text-pink font-bold"
+                  >método hello faces de points of you</span
+                >
+                en un vivencial de 3 horas.
+              </p>
+
+              <p class="font-mont font-bold text-[1rem] pt-4">
+                Points of you es un método de coaching que consiste en
+                <span class="text-pink font-bold"
+                  >pausar, explorar, enfocar y hacer para expandir tus puntos de
+                  vista desde la emoción e intuición lógica.</span
+                >
+              </p>
+
+              <p class="mt-5 font-bold text-[1rem]">
+                Ya quiero que conectes contigo
+              </p>
+
+              <p class="font-bold text-[1rem]">
+                Ya quiero que actives la confianza en ti
+              </p>
+            </div>
+
+            <div class="lg:w-[30%] hidden lg:block">
+              <img src="./assets/images/libro_point.png" />
+            </div>
+          </div>
+        </div>
+
+        <!-- info about course -->
+        <div class="pt-5 flex items-center">
+          <div>
+            <div class="flex items-center">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/calendar.png" alt="icono calendario" />
+              </div>
+              <div class="font-mont text-left">
+                <p>FECHA</p>
+                <p class="font-bold text-pink">SAB 11.11.23</p>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/clock.png" alt="icono calendario" />
+              </div>
+              <div class="font-mont text-left">
+                <p>HORA</p>
+                <p class="font-bold text-pink">10:00 AM</p>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/clock.png" alt="icono calendario" />
+              </div>
+              <div class="font-mont text-left">
+                <p>DURACIÓN</p>
+                <p class="font-bold text-pink">3 HORAS</p>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/zoom.png" alt="icono calendario" />
+              </div>
+              <div class="font-mont text-left">
+                <p>VÍA</p>
+                <p class="font-bold text-pink">ZOOM</p>
+              </div>
+            </div>
+
+            <div class="flex items-center">
+              <div class="basis-[30%] lg:basis-[20%]">
+                <img src="assets/images/money.png" alt="icono calendario" />
+              </div>
+              <div class="font-mont text-left">
+                <p>COSTO</p>
+                <div>
+                  <p class="font-bold text-pink">
+                    TALLER ONLINE: <span class="text-black">$65</span>
+                  </p>
+                  <p class="font-bold text-pink">
+                    TALLER + SESIÓN: <span class="text-black">$95</span>
+                  </p>
+                  <p>
+                    DE ACOMPAÑAMIENTO <br />
+                    PSICOLÓGICO
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[70%] mx-auto lg:block hidden">
+            <img src="./assets/images/hearth_you.png" alt="poinst of you" />
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPRAR ENTRADA -->
+      <div class="mt-8 font-mont font-bold">
+        <h2 class="font-angel font-normal text-[2.5rem]">¿Estás lista ?</h2>
+        <div class="w-[40%] lg:w-[20%] mx-auto text-center">
+          <img src="assets/images/lentes.png" alt="lentes pasta negra" />
+        </div>
+        <div class="flex justify-center w-[80%] mx-auto pt-3 gap-4">
+          <button
+            id="button-show-taller"
+            class="flex bg-pink p-3 lg:p-6 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
+            title="COMPRAR ENTRADA"
+          >
+            TALLER ONLINE
+          </button>
+
+          <button
+            id="button-show-taller-sesion"
+            class="flex bg-pink p-3 lg:p-6 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
+            title="COMPRAR ENTRADA"
+          >
+            TALLER + SESIÓN
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main modal TALLER-->
+    <div
+      id="modal-taller"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed hidden top-[10%] lg:top-[10%] left-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full"
+    >
+      <div class="relative mx-auto w-full max-w-md max-h-full bg-cream">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button
+            id="close-button-taller"
+            type="button"
+            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="crypto-modal"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <!-- Modal header -->
+          <div class="px-6 py-4 border-b rounded-t dark:border-gray-600">
+            <h3
+              class="text-base font-semibold text-gray-900 lg:text-xl dark:text-white"
+            >
+              Selecciona tu moneda local
+            </h3>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6">
+            <ul class="my-4 space-y-3">
+              <li>
+                <a
+                  href="https://buy.stripe.com/bIY7sUa1F4OE2RycMO"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="./assets/images/usa_flag.png"
+                      alt="bandera estados unidos"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">USD</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/bIY8wYb5J1Cs8bS6os"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="./assets/images/spain_flag.png"
+                      alt="bandera de espana"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">EUR</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/8wM5kMddR1Cs8bS6ot"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="assets/images/peru_flag.png"
+                      alt="bandera de peru"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">PEN</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/dR63cEgq3dladwc28b"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="assets/images/colombia_flag.png"
+                      alt="bandera de colombia"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">COP</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/28obJa8XBbd24ZGbIO"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="assets/images/chile_flag.png"
+                      alt="bandera de chile"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">CLP</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main modal TALLER + SESION-->
+    <div
+      id="modal-taller-sesion"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed hidden top-[10%] lg:top-[10%] left-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full"
+    >
+      <div class="relative mx-auto w-full max-w-md max-h-full bg-cream">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button
+            id="close-button-taller-sesion"
+            type="button"
+            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="crypto-modal"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <!-- Modal header -->
+          <div class="px-6 py-4 border-b rounded-t dark:border-gray-600">
+            <h3
+              class="text-base font-semibold text-gray-900 lg:text-xl dark:text-white"
+            >
+              Selecciona tu moneda local
+            </h3>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6">
+            <ul class="my-4 space-y-3">
+              <li>
+                <a
+                  href="https://buy.stripe.com/bIY28A1v90yo63K8wD"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="./assets/images/usa_flag.png"
+                      alt="bandera estados unidos"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">USD</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/fZe6oQehVdlabo414c"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="./assets/images/spain_flag.png"
+                      alt="bandera de espana"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">EUR</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/cN2eVm1v980Q1NucMV"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="assets/images/peru_flag.png"
+                      alt="bandera de peru"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">PEN</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/eVa28A4Hl5SI4ZG8wG"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="assets/images/colombia_flag.png"
+                      alt="bandera de colombia"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">COP</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://buy.stripe.com/aEU8wY8XB4OE0JqcMX"
+                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <div class="w-[10%]">
+                    <img
+                      src="assets/images/chile_flag.png"
+                      alt="bandera de chile"
+                    />
+                  </div>
+                  <span class="flex-1 ml-3 whitespace-nowrap">CLP</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

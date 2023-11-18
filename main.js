@@ -28,7 +28,7 @@ function validateEmail(input) {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  const emailInput = document.getElementById("email").value;
+  const emailInput = input;
   const label = document.getElementById("label");
 
   if (emailInput.match(validRegex)) {
@@ -42,54 +42,48 @@ function validateEmail(input) {
   }
 }
 
-/*
-window.onload = function () {
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-      const emailInput = document.getElementById("email").value;
-      const label = document.getElementById("label");
-      event.preventDefault();
-      if (!validateEmail(emailInput)) return;
-      emailjs
-        .send("service_6yordkl", "template_mfb893u", {
-          email: emailInput,
-        })
-        .then(
-          function (response) {
-            console.log("SUCCESS!", response.status, response.text);
-            document.getElementById("contact-form").reset();
-            label.innerHTML = "Gracias por suscribirte";
-          },
-          function (error) {
-            label.innerHTML = "Ocurrió un error, por favor intenta de nuevo"
-            console.log("FAILED...", error);
-          }
-        );
-    });
-};
-*/
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    const emailInput = document.getElementById("email").value;
+    const label = document.getElementById("label");
+    event.preventDefault();
+    if (!validateEmail(emailInput)) return;
+    console.log("Sending...");
+    emailjs
+      .send("service_6yordkl", "template_mfb893u", {
+        email: emailInput,
+      })
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          document.getElementById("contact-form").reset();
+          label.innerHTML = "Gracias pronto recibirás tu autoclase!";
+        },
+        function (error) {
+          label.innerHTML = "Ocurrió un error, por favor intenta de nuevo";
+          console.log("FAILED...", error);
+        }
+      );
+  });
 
-const buttonShow = document.getElementById("button-show-taller");
-const modalTaller = document.getElementById("modal-taller");
-const closeButton = document.getElementById("close-button-taller")
+// Modal Free class
 
-const buttonShowTallerSesion = document.getElementById("button-show-taller-sesion");
-const modalTallerSesion = document.getElementById("modal-taller-sesion");
-const closeButtonTallerSesion = document.getElementById("close-button-taller-sesion")
+function showModalFreeClass() {
+  const modalFreeClass = document.getElementById("modal-free-class");
+  modalFreeClass.classList.toggle("hidden");
+  sessionStorage.setItem("viewPop", true);
+}
 
-buttonShow.addEventListener("click", () => {
-  modalTaller.classList.remove("hidden")
-})
+if(!sessionStorage.getItem("viewPop")) {
+  setTimeout(() => {
+    showModalFreeClass();
+  }, 3000);
+}
 
-closeButton.addEventListener("click", () => {
-  modalTaller.classList.toggle("hidden")
-});
+const modalFreeClass = document.getElementById("modal-free-class");
+const closeButtonFreeClass = document.getElementById("close-button-free-class");
 
-buttonShowTallerSesion.addEventListener("click", () => {
-  modalTallerSesion.classList.remove("hidden")
-})
-
-closeButtonTallerSesion.addEventListener("click", () => {
-  modalTallerSesion.classList.toggle("hidden")
+closeButtonFreeClass.addEventListener("click", () => {
+  modalFreeClass.classList.toggle("hidden");
 });

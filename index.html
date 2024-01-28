@@ -3,18 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/e_icon.png">
+    <link rel="shortcut icon" href="assets/images/e_icon.png" />
     <link rel="stylesheet" href="index.css" />
     <script src="https://js.stripe.com/v3/"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init('476bXsavRQ_1pGv8O');
-        })();
+      (function () {
+        emailjs.init("476bXsavRQ_1pGv8O");
+      })();
     </script>
     <title>Conectarme</title>
   </head>
   <body>
+    <nav class="relative px-4 py-4 flex justify-between items-center">
+      <div>
+        <a href="/">
+          <img
+            class="w-[150px]"
+            src="assets/images/conectarme_sin.png"
+            alt="lentes de pasta negra"
+          />
+        </a>
+      </div>
+
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-pink p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a class="text-sm text-pink font-bold hover:text-cream" href="/"
+            >Inicio</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="/pre_registro_peru.html"
+            >Pre-Registro Perú</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm text-gray-400 hover:text-cream" href="/pre_registro_miami.html"
+            >Pre-Registro Miami</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="/wait_list_online.html"
+            >Wait list On-line</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="#"
+            >Houston</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#ffffff] overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img class="w-[150px]" src="assets/images/conectarme_sin.png" alt="conectarme titulo">
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-bold text-cream bg-pink hover:text-cream rounded"
+                href="/"
+                >Inicio</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/pre_registro_peru.html"
+                >Pre-Registro Perú</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/pre_registro_miami.html"
+                >Pre-Registro Miami</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/wait_list_online.html"
+                >Wait list On-line</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="#"
+                >Houston</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
     <section id="header" class="pt-11 bg-cream">
       <div class="flex flex-col lg:flex-row items-center lg:justify-center">
         <div class="flex w-[60%]">
@@ -38,8 +226,23 @@
         <h2
           class="text-pink font-kaoly text-[1.2rem] md:text-[1.3rem] text-center lg:text-[2.5rem]"
         >
-          <span class="text-[2rem] lg:text-[3rem]">v</span>ive la experiencia de activar la confianza en ti
+          <span class="text-[2rem] lg:text-[3rem]">v</span>ive la experiencia de
+          activar la confianza en ti
         </h2>
+      </div>
+
+      <div
+        id="video"
+        class="flex justify-center lg:w-1/2 bg-pink p-5 mt-5 mx-auto lg:rounded-lg"
+      >
+        <iframe
+          class="w-full lg:w-[90%] h-[200px] lg:h-[400px]"
+          src="https://www.youtube.com/embed/LWGnotxM6rQ?autoplay=1"
+          title="ConectarME"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
 
       <div class="flex flex-col gap-5 mt-3 lg:w-[60%] mx-auto">
@@ -186,9 +389,11 @@
       class="text-center text-sm pb-9 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
     >
       <div>
-        <div class="w-[40%] mt-4 mx-auto flex  flex-col items-center">
+        <div class="w-[40%] mt-4 mx-auto flex flex-col items-center">
           <img src="assets/images/conectarme_sin.png" alt="conectarme" />
-          <p class="font-mont text-xs lg:text-3xl lg:mt-[-30px]">está diseñado para que:</p>
+          <p class="font-mont text-xs lg:text-3xl lg:mt-[-30px]">
+            está diseñado para que:
+          </p>
         </div>
         <div class="flex justify-center lg:w-[70%] mx-auto">
           <img
@@ -200,15 +405,14 @@
 
       <div class="w-[70%] mx-auto">
         <p class="font-mont font-bold lg:w-[70%] mx-auto">
-          En esta experiencia utilizamos FACES de points of you, points of you es
-          un método de coaching
+          En esta experiencia utilizamos FACES de points of you, points of you
+          es un método de coaching
           <span class="text-pink font-bold"
-            >que consiste en pausar, explorar, enfocar y hacer, para expandir tus
-            puntos de vista desde la emoción e intuición y la lógica.</span
+            >que consiste en pausar, explorar, enfocar y hacer, para expandir
+            tus puntos de vista desde la emoción e intuición y la lógica.</span
           >
         </p>
       </div>
-
 
       <p class="mt-5 font-bold">Ya quiero que conectes contigo</p>
 
@@ -221,16 +425,31 @@
         </div>
         <div class="flex gap-3 justify-center w-[80%] mx-auto pt-3">
           <a
-            class="flex bg-pink p-3 lg:p-6 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
+            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
+            href="/pre_registro_peru.html"
+          >
+            <p>Pre-registro Perú</p>
+          </a>
+          <a
+            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
+            href="/pre_registro_miami.html"
+          >
+            <p>Pre-registro Miami</p>
+          </a>
+          <a
+            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
             href="/presencial.html"
           >
             <p>Segunda Edición Houston</p>
           </a>
           <a
-            class="flex bg-pink p-3 lg:p-6 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
+            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
             href="#"
           >
-            <p>Taller On-line <br> Segunda Edición (Próximamente)</p>
+            <p>
+              Taller On-line <br />
+              Segunda Edición (Próximamente)
+            </p>
           </a>
         </div>
       </div>
@@ -238,16 +457,19 @@
 
     <section id="about" class="bg-pink pt-6">
       <div class="w-[80%] mx-auto lg:flex lg:items-center lg:text-[0.9rem]">
-
-        <div class="font-mont text-cream text-center font-bold pb-8 lg:pb-0 lg:text-left lg:basis-[60%]">
-          <h2 class="font-angel text-[3.5rem] text-cream pt-8 lg:pt-0">Sobre mi</h2>
+        <div
+          class="font-mont text-cream text-center font-bold pb-8 lg:pb-0 lg:text-left lg:basis-[60%]"
+        >
+          <h2 class="font-angel text-[3.5rem] text-cream pt-8 lg:pt-0">
+            Sobre mi
+          </h2>
 
           <p>
             Soy Irina, psicóloga clínica, acompaño procesos emocionales de
             cambio desde hace 16 años. Trabajo con mujeres que quieren descubrir
             sus creencias limitantes, conectarse con sus emociones y ser libres
-            de ser. Validada en EE.UU (Naces) con certificación internacional
-            en FACES Points of you.
+            de ser. Validada en EE.UU (Naces) con certificación internacional en
+            FACES Points of you.
           </p>
 
           <p class="mt-5">
@@ -269,7 +491,10 @@
         </div>
 
         <div class="lg:basis-[40%] hidden basis-0 lg:block">
-          <img src="assets/images/irina_silla.png" alt="irina sentada banco de madera">
+          <img
+            src="assets/images/irina_silla.png"
+            alt="irina sentada banco de madera"
+          />
         </div>
       </div>
     </section>
@@ -308,31 +533,57 @@
             <span class="sr-only">Close modal</span>
           </button>
           <!-- Modal body -->
-          <div class=" w-[80%] md:w-[50%] mx-auto">
-            <img src="assets/images/conectarme_sin.png" alt="conectarme titulo">
+          <div class="w-[80%] md:w-[50%] mx-auto">
+            <img
+              src="assets/images/conectarme_sin.png"
+              alt="conectarme titulo"
+            />
           </div>
-          <div class="text-center text-[3rem] md:mb-[-1rem] lg:text-[4rem] mt-[-40px] lg:mb-[-2rem] rotate-[-5deg]">
+          <div
+            class="text-center text-[3rem] md:mb-[-1rem] lg:text-[4rem] mt-[-40px] lg:mb-[-2rem] rotate-[-5deg]"
+          >
             <h2 class="font-angel">Audio clase</h2>
           </div>
           <div class="p-6 flex justify-center mt-[-30px] lg:mt-0">
-            <div class="flex flex-col max-w-4xl md:h-56 bg-pink rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
+            <div
+              class="flex flex-col max-w-4xl md:h-56 bg-pink rounded-lg shadow-lg overflow-hidden md:flex-row my-10"
+            >
               <div class="md:flex items-center justify-center md:w-[40%]">
-                <div class="py-6 px-8 md:py-0 text-[1.2rem] text-center md:text-left font-semibold">
-                  <p class="text-md mt-3"> Accede a tu clase audible <span
-                    class="text-cream font-bold">GRATIS</span> <br> <span
-                    class="text-cream text-lg font-bold">"ACTIVA TU AUTOCONFIANZA"</span> <br> ¡Deja tu correo para recibir esta audio clase!
+                <div
+                  class="py-6 px-8 md:py-0 text-[1.2rem] text-center md:text-left font-semibold"
+                >
+                  <p class="text-md mt-3">
+                    Accede a tu clase audible
+                    <span class="text-cream font-bold">GRATIS</span> <br />
+                    <span class="text-cream text-lg font-bold"
+                      >"ACTIVA TU AUTOCONFIANZA"</span
+                    >
+                    <br />
+                    ¡Deja tu correo para recibir esta audio clase!
                   </p>
                 </div>
               </div>
               <div
-                class="flex items-center justify-center pb-6 md:py-0 md:w-[60%] md:border-b-[#E78C98] md:border-b-8  bg-cream">
+                class="flex items-center justify-center pb-6 md:py-0 md:w-[60%] md:border-b-[#E78C98] md:border-b-8 bg-cream"
+              >
                 <form id="contact-form">
                   <p id="label" class="text-pink p-2 self-start font-bold"></p>
-                  <div class="flex flex-col rounded-lg overflow-hidden lg:flex-row">
+                  <div
+                    class="flex flex-col rounded-lg overflow-hidden lg:flex-row"
+                  >
                     <input
                       class="py-3 px-4 bg-gray-200 text-gray-800 border-pink border-2 outline-none placeholder-gray-500 focus:bg-gray-100"
-                      type="text" id="email" name="email" placeholder="Enter your email" required>
-                    <input type="submit" value="¡Quiero recibir la audio clase!" class="py-3 px-4 input-pink text-cream font-semibold uppercase hover:bg-gray-600">
+                      type="text"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                    <input
+                      type="submit"
+                      value="¡Quiero recibir la audio clase!"
+                      class="py-3 px-4 input-pink text-cream font-semibold uppercase hover:bg-gray-600"
+                    />
                   </div>
                 </form>
               </div>

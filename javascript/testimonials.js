@@ -6,32 +6,38 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import testimonial_1 from "../assets/images/testimonial_1.png";
+import testimonial_2 from "../assets/images/testimonial_2.png";
+import testimonial_3 from "../assets/images/testimonial_3.png";
+import testimonial_4 from "../assets/images/testimonial_4.png";
+import testimonial_5 from "../assets/images/testimonial_5.png";
+
 const testimonialsContainer = document.getElementById("container");
 
 const testimonials = [
   {
     name: "Lina",
-    photo: "assets/images/testimonial_1.png",
+    photo: testimonial_1,
     text: `“Jamás había asistido a un taller vivencial y para mi  fue revelador, a mis 50 años me hace sentido lo que vivo  hoy y lo que soy  y lo mejor es aprender a  decidir lo que quiero SER eligiendo el camino de mi bienestar”`,
   },
   {
     name: "Mónica",
-    photo: "assets/images/testimonial_2.png",
+    photo: testimonial_2,
     text: `"Conectarme para mí fue una experiencia y completamente transformadora. Me permití observar mis emociones y me sentí en un espacio seguro"`,
   },
   {
     name: "Geraldine",
-    photo: "assets/images/testimonial_3.png",
+    photo: testimonial_3,
     text: `"Conectarme fue una experiencia muy linda y llegó a mi en un momento que lo necesitaba, lo describo como un bálsamo. Me gustaron las dinámicas y como se reflejaban con mis sentimientos actuales"`,
   },
   {
     name: "Adriana",
-    photo: "assets/images/testimonial_4.png",
+    photo: testimonial_4,
     text: `"Descubrí que aún me falta por aprender, a pesar de que voy a terapia este taller fue esencial para mi crecimiento y mi proceso de encontrarme, conecté conmigo y con personas maravillosas. Es un taller necesario, vas a aprender de ti y lo que puedes lograr de una forma increíble"`,
   },
   {
     name: "Trina",
-    photo: "assets/images/testimonial_5.png",
+    photo: testimonial_5,
     text: `"Después de vivir esta experiencia mi mayor descubrimiento fue el daño que me hace ser tan exigente y perfeccionista conmigo. Pude reconocer esas creencias que me limitan y salir de allí con plan para dejar fluir las cosas. El taller te da muchas herramientas para la vida, aprendes a confiar en ti y en el proceso"`,
   },
 ];

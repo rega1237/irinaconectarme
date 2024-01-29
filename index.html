@@ -15,6 +15,10 @@
         emailjs.init("476bXsavRQ_1pGv8O");
       })();
     </script>
+    <script
+      src="https://kit.fontawesome.com/ed14e3c3ce.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Conectarme</title>
   </head>
   <body>
@@ -67,7 +71,7 @@
         </li>
         <li>
           <a class="text-sm hover:text-cream" href="/pre_registro_peru.html"
-            >Pre-Registro Perú</a
+            >Pre-Registro Lima</a
           >
         </li>
         <li class="text-gray-300">
@@ -87,7 +91,9 @@
           </svg>
         </li>
         <li>
-          <a class="text-sm text-gray-400 hover:text-cream" href="/pre_registro_miami.html"
+          <a
+            class="text-sm text-gray-400 hover:text-cream"
+            href="/pre_registro_miami.html"
             >Pre-Registro Miami</a
           >
         </li>
@@ -129,9 +135,7 @@
           </svg>
         </li>
         <li>
-          <a class="text-sm hover:text-cream" href="#"
-            >Houston</a
-          >
+          <a class="text-sm hover:text-cream" href="presencial.html">Houston</a>
         </li>
       </ul>
     </nav>
@@ -142,7 +146,11 @@
       >
         <div class="flex items-center mb-8">
           <a class="mr-auto text-3xl font-bold leading-none" href="#">
-            <img class="w-[150px]" src="assets/images/conectarme_sin.png" alt="conectarme titulo">
+            <img
+              class="w-[150px]"
+              src="assets/images/conectarme_sin.png"
+              alt="conectarme titulo"
+            />
           </a>
           <button class="navbar-close">
             <svg
@@ -174,7 +182,7 @@
               <a
                 class="block p-4 text-sm font-semibold hover:text-cream rounded"
                 href="/pre_registro_peru.html"
-                >Pre-Registro Perú</a
+                >Pre-Registro Lima</a
               >
             </li>
             <li class="mb-1">
@@ -194,7 +202,7 @@
             <li class="mb-1">
               <a
                 class="block p-4 text-sm font-semibold hover:text-cream rounded"
-                href="#"
+                href="/presencial.html"
                 >Houston</a
               >
             </li>
@@ -236,7 +244,7 @@
         class="flex justify-center lg:w-1/2 bg-pink p-5 mt-5 mx-auto lg:rounded-lg"
       >
         <iframe
-          class="w-full lg:w-[90%] h-[200px] lg:h-[400px]"
+          class="w-[80%] lg:w-[90%] h-[200px] landscape:[h-300px] lg:h-[400px]"
           src="https://www.youtube.com/embed/LWGnotxM6rQ?autoplay=1"
           title="ConectarME"
           frameborder="0"
@@ -428,7 +436,7 @@
             class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
             href="/pre_registro_peru.html"
           >
-            <p>Pre-registro Perú</p>
+            <p>Pre-registro Lima</p>
           </a>
           <a
             class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
@@ -436,6 +444,13 @@
           >
             <p>Pre-registro Miami</p>
           </a>
+          <a
+          class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
+          href="/wait_list_online.html"
+        >
+          <p>Wait List Online</p>
+        </a>
+          <!--
           <a
             class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
             href="/presencial.html"
@@ -451,7 +466,19 @@
               Segunda Edición (Próximamente)
             </p>
           </a>
+          -->
         </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-5">
+      <div class="text-center">
+        <h2 class="font-angel text-pink text-[5rem]">Testimonios</h2>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper w-[90%]">
+        <div id="container" class="swiper-wrapper p-5 items-center mb-5"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -594,5 +621,6 @@
     </div>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/javascript/testimonials.js"></script>
   </body>
 </html>

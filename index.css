@@ -30,3 +30,19 @@
 .input-pink {
   background-color: rgb(231 140 152)!important;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #E78C98 !important;
+}
+
+.testimonial-text-container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .testimonial-text-container {
+    width: 75%;
+  }
+}
+

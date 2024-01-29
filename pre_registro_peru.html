@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/e_icon.png" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("476bXsavRQ_1pGv8O");
+      })();
+    </script>
+    <title>Pre-registro Lima</title>
+  </head>
+  <body>
+    <nav class="relative px-4 py-4 flex justify-between items-center">
+      <div>
+        <a href="/">
+          <img
+            class="w-[150px]"
+            src="assets/images/conectarme_sin.png"
+            alt="lentes de pasta negra"
+          />
+        </a>
+      </div>
+
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-pink p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a class="text-sm hover:text-cream" href="/">Inicio</a>
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-sm text-pink font-bold hover:text-cream"
+            href="/pre_registro_peru.html"
+            >Pre-Registro Lima</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="pre_registro_miami.html"
+            >Pre-Registro Miami</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="/wait_list_online.html"
+            >ON LINE lista de espera</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="/presencial.html">Houston</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#ffffff] overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img
+              class="w-[150px]"
+              src="assets/images/conectarme_sin.png"
+              alt="conectarme titulo"
+            />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/"
+                >Inicio</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-bold text-cream bg-pink hover:text-cream rounded"
+                href="/pre_registro_peru.html"
+                >Pre-Registro Lima</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-cream hover:text-blue-600 rounded"
+                href="pre_registro_miami.html"
+                >Pre-Registro Miami</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-cream hover:text-blue-600 rounded"
+                href="/wait_list_online.html"
+                >ON LINE lista de espera</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="1block p-4 text-sm font-semibold text-gray-400 hover:bg-cream hover:text-blue-600 rounded"
+                href="/presencial.html"
+                >Houston</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="flex portrait:h-[100dvh]">
+      <div
+        class="lg:w-[55%] flex flex-col items-center justify-center bg-cream"
+      >
+        <div class="w-[40%]">
+          <img src="assets/images/conectarme_sin.png" alt="conectarme titulo" />
+        </div>
+        <div
+          class="text-center text-[3rem] mt-[-1.5rem] lg:text-[4rem] mb-[-1rem] lg:mt-[-3rem] lg:mb-[-2rem] rotate-[-5deg]"
+        >
+          <h2 class="font-angel">Lima</h2>
+        </div>
+        <div class="w-[70%] mx-auto pt-6">
+          <p class="font-bold font-mont text-2xl text-center">
+            Nos encontraremos este 2 de marzo en Miraflores ¿te unes?
+          </p>
+        </div>
+        <form id="form-peru" class="w-[90%] mx-auto lg:w-full">
+          <p id="label-peru" class="text-pink p-2 self-start font-bold text-center"></p>
+          <div class="flex gap-5 mt-6 flex-col md:justify-center md:flex-row">
+            <input
+              id="name-peru"
+              class="py-[10px] px-[23px] rounded-[8px] shadow-sm shadow-black"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+            <input
+              id="lastname-peru"
+              class="py-[10px] px-[23px] rounded-[8px] shadow-sm shadow-black"
+              type="text"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div class="flex gap-5 mt-5 flex-col md:justify-center md:flex-row">
+            <input
+              id="phone-peru"
+              class="py-[10px] px-[23px] rounded-[8px] shadow-sm shadow-black"
+              type="tel"
+              name="nombre"
+              placeholder="Telefono"
+            />
+            <input
+              id="email-peru"
+              class="py-[10px] px-[23px] rounded-[8px] shadow-sm shadow-black"
+              type="email"
+              name="apellido"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="text-center p-6">
+            <input
+              type="submit"
+              class="bg-pink p-5 rounded-lg font-mont font-bold text-cream"
+              value="Quiero Pre-Registrarme"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="hidden lg:block md:w-[45%] bg-pink overflow-hidden">
+        <img class="object-cover" src="assets/images/irina_silla.png" alt="" />
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

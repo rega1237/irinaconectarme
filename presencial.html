@@ -1,120 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/images/e_icon.png">
-  <link rel="stylesheet" href="index.css" />
-  <script src="https://js.stripe.com/v3/"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/e_icon.png" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init('476bXsavRQ_1pGv8O');
-        })();
+      (function () {
+        emailjs.init("476bXsavRQ_1pGv8O");
+      })();
     </script>
-  <title>Presencial</title>
-</head>
+    <title>Presencial</title>
+  </head>
 
-<body>
-  <section id="header_presencial" class="pt-5 bg-cream">
-    <div class="flex flex-col lg:flex-row items-center lg:justify-center">
-      <div class="flex w-[60%]">
-        <img class="self-center" src="assets/images/conectarme.png" alt="conectarme titulo" />
-      </div>
-      <div class="w-[30%] lg:self-end">
-        <img src="assets/images/irina_presencial.png" alt="Irina sosteniendo libro" />
-      </div>
-    </div>
-  </section>
-
-  <section id="points" class="text-center text-sm pb-12 bg-[url('/assets/images/bubbles_1.png')] pos-bubble">
-    <div class="w-[70%] mx-auto pt-10 lg:pt-20">
+  <body>
+    <nav class="relative px-4 py-4 flex justify-between items-center">
       <div>
-        <div class="text-center text-[1.5rem] mb-[-1rem] lg:text-[4rem] lg:mb-[-2rem] rotate-[-5deg]">
-          <h2 class="font-angel">Houston</h2>
-        </div>
-        <div class="w-[60%] lg:w-[40%] text-center mx-auto">
-          <img src="assets/images/conectarme_sin.png" alt="conectarme" />
-        </div>
+        <a href="/">
+          <img
+            class="w-[150px]"
+            src="assets/images/conectarme_sin.png"
+            alt="lentes de pasta negra"
+          />
+        </a>
       </div>
 
-      <div class="lg:w-[70%] lg:mx-auto lg:text-lg lg:leading-7 font-mont font-bold">
-        <p>
-          Conectarme es una experiencia creada para mujeres que quieren
-          activar su autoconfianza y priorizar su salud mental.
-        </p>
-
-        <p class="mt-5">
-          Es un taller completamente vivencial, donde las participantes
-          aprenden a reconocer su <span class="text-pink">VOZ</span>,
-          descubren creencias limitantes sobre sí mismas, desarrollan la
-          gestión emocional y empiezan a decir
-          <span class="text-pink font-bold">Si sin miedo y No sin culpa.</span>
-          Y además se llevan un plan de acción para trabajar en ellas.
-        </p>
-
-        <p class="mt-5">
-          Utilizamos el método de Coaching
-          <span class="text-pink">Points of you,</span> una herramienta que
-          combina la emoción y la lógica y te ayuda a ver nuevos puntos de
-          vistas a través de dinámicas conmovedoras y reveladoras.
-        </p>
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-pink p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
       </div>
-      
-      <!--GALERIA-->
-      
-      <div class="bg-white py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">    
-            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-                <!-- image - start -->
-                <a href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="assets/images/gallery_1.jpg" loading="lazy" alt="conetarme primera edición" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-    
-                    <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-                </a>
-                <!-- image - end -->
-    
-                <!-- image - start -->
-                <a href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                    <img src="assets/images/gallery_2.jpg" loading="lazy" alt="conetarme primera edición" class="absolute inset-0 h-full w-full object-cover object-left md:object-center transition duration-200 group-hover:scale-110" />
-    
-                    <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-                </a>
-                <!-- image - end -->
-    
-                <!-- image - start -->
-                <a href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                    <img src="assets/images/gallery_3.jpg" loading="lazy" alt="conetarme primera edición" class="absolute inset-0 h-full w-full object-cover object-right md:object-center transition duration-200 group-hover:scale-110" />
-    
-                    <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-                </a>
-                <!-- image - end -->
-    
-                <!-- image - start -->
-                <a href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="assets/images/gallery_4.jpg" loading="lazy" alt="conetarme primera edición" class="absolute inset-0 h-full w-full object-cover object-right md:object-center transition duration-200 group-hover:scale-110" />
-    
-                    <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
-                </a>
-                <!-- image - end -->
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a class="text-sm hover:text-cream" href="/">Inicio</a>
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="/pre_registro_peru.html"
+            >Pre-Registro Lima</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-sm text-gray-400 hover:text-cream"
+            href="/pre_registro_miami.html"
+            >Pre-Registro Miami</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a class="text-sm hover:text-cream" href="/wait_list_online.html"
+            >ON LINE lista de espera</a
+          >
+        </li>
+        <li class="text-gray-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            class="w-4 h-4 current-fill"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+            />
+          </svg>
+        </li>
+        <li>
+          <a
+            class="text-sm text-pink font-bold hover:text-cream"
+            href="presencial.html"
+            >Houston</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#ffffff] overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="/index.html">
+            <img
+              class="w-[150px]"
+              src="assets/images/conectarme_sin.png"
+              alt="conectarme titulo"
+            />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/"
+                >Inicio</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/pre_registro_peru.html"
+                >Pre-Registro Lima</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/pre_registro_miami.html"
+                >Pre-Registro Miami</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold hover:text-cream rounded"
+                href="/wait_list_online.html"
+                >ON LINE lista de espera</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-bold text-cream bg-pink hover:text-cream rounded"
+                href="/presencial.html"
+                >Houston</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section id="header_presencial" class="pt-5 bg-cream">
+      <div class="flex flex-col lg:flex-row items-center lg:justify-center">
+        <div class="flex w-[60%]">
+          <img
+            class="self-center"
+            src="assets/images/conectarme.png"
+            alt="conectarme titulo"
+          />
+        </div>
+        <div class="w-[30%] lg:self-end">
+          <img
+            src="assets/images/irina_presencial.png"
+            alt="Irina sosteniendo libro"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="points"
+      class="text-center text-sm pb-12 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
+    >
+      <div class="w-[70%] mx-auto pt-10 lg:pt-20">
+        <div>
+          <div
+            class="text-center text-[1.5rem] mb-[-1rem] lg:text-[4rem] lg:mb-[-2rem] rotate-[-5deg]"
+          >
+            <h2 class="font-angel">Houston</h2>
+          </div>
+          <div class="w-[60%] lg:w-[40%] text-center mx-auto">
+            <img src="assets/images/conectarme_sin.png" alt="conectarme" />
+          </div>
+        </div>
+
+        <div
+          class="lg:w-[70%] lg:mx-auto lg:text-lg lg:leading-7 font-mont font-bold"
+        >
+          <p>
+            Conectarme es una experiencia creada para mujeres que quieren
+            activar su autoconfianza y priorizar su salud mental.
+          </p>
+
+          <p class="mt-5">
+            Es un taller completamente vivencial, donde las participantes
+            aprenden a reconocer su <span class="text-pink">VOZ</span>,
+            descubren creencias limitantes sobre sí mismas, desarrollan la
+            gestión emocional y empiezan a decir
+            <span class="text-pink font-bold"
+              >Si sin miedo y No sin culpa.</span
+            >
+            Y además se llevan un plan de acción para trabajar en ellas.
+          </p>
+
+          <p class="mt-5">
+            Utilizamos el método de Coaching
+            <span class="text-pink">Points of you,</span> una herramienta que
+            combina la emoción y la lógica y te ayuda a ver nuevos puntos de
+            vistas a través de dinámicas conmovedoras y reveladoras.
+          </p>
+        </div>
+
+        <!--GALERIA-->
+
+        <div class="bg-white py-6 sm:py-8 lg:py-12">
+          <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div
+              class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8"
+            >
+              <!-- image - start -->
+              <a
+                href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
+              >
+                <img
+                  src="assets/images/gallery_1.jpg"
+                  loading="lazy"
+                  alt="conetarme primera edición"
+                  class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                />
+
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                ></div>
+              </a>
+              <!-- image - end -->
+
+              <!-- image - start -->
+              <a
+                href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
+              >
+                <img
+                  src="assets/images/gallery_2.jpg"
+                  loading="lazy"
+                  alt="conetarme primera edición"
+                  class="absolute inset-0 h-full w-full object-cover object-left md:object-center transition duration-200 group-hover:scale-110"
+                />
+
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                ></div>
+              </a>
+              <!-- image - end -->
+
+              <!-- image - start -->
+              <a
+                href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
+              >
+                <img
+                  src="assets/images/gallery_3.jpg"
+                  loading="lazy"
+                  alt="conetarme primera edición"
+                  class="absolute inset-0 h-full w-full object-cover object-right md:object-center transition duration-200 group-hover:scale-110"
+                />
+
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                ></div>
+              </a>
+              <!-- image - end -->
+
+              <!-- image - start -->
+              <a
+                href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
+              >
+                <img
+                  src="assets/images/gallery_4.jpg"
+                  loading="lazy"
+                  alt="conetarme primera edición"
+                  class="absolute inset-0 h-full w-full object-cover object-right md:object-center transition duration-200 group-hover:scale-110"
+                />
+
+                <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+                ></div>
+              </a>
+              <!-- image - end -->
             </div>
+          </div>
         </div>
-      </div>
 
-      <div class="pt-5">
+        <div class="pt-5">
+          <!--
         <div class="lg:flex lg:justify-center">
           <div class="flex items-center lg:justify-end">
             <div class="basis-[30%] lg:basis-[20%]">
@@ -149,12 +389,15 @@
             </p>
           </div>
         </div>
-
-        <div class="mt-8 font-mont font-bold">
-          <h2 class="font-angel font-normal text-[2.5rem]">¿Estás lista ?</h2>
-          <div class="w-[40%] lg:w-[20%] mx-auto text-center">
-            <img src="assets/images/lentes.png" alt="lentes pasta negra" />
-          </div>
+        -->
+          <div class="mt-8 font-mont font-bold">
+            <h2 class="font-angel font-normal text-[2.5rem]">
+              Proximamente 3ra Edición
+            </h2>
+            <div class="w-[40%] lg:w-[20%] mx-auto text-center">
+              <img src="assets/images/lentes.png" alt="lentes pasta negra" />
+            </div>
+            <!--
           <div class="flex gap-3 justify-center w-[80%] mx-auto pt-3">
             <a
               id="checkout"
@@ -164,38 +407,55 @@
               <p>Comprar Pre-venta</p>
             </a>
           </div>
+        -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-          <!-- CAJA SUBSCRIBIRSE
-        <div class="flex flex-col max-w-4xl md:h-56 bg-pink rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
-          <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-700">
-            <div class="py-6 px-8 md:py-0">
-              <h2 class="font-angel text-[4rem] text-cream">Houston</h2>
-              <h2 class="text-cream text-[1.5rem] font-bold mt-3 md:text-gray-100">Segunda Edición</h2>
-              <p class="text-md mt-3">¡Prepárate para la Segunda Edición <span
-                  class="text-cream font-bold">CONECTARME</span> en Houston, Deja tu email para enviarte toda la información!
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 md:border-b-[#E78C98] md:border-b-8  bg-cream">
-            <form id="contact-form" >
-              <p id="label" class="text-pink p-2 self-start font-bold"></p>
-              <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
-                <input
-                  class="py-3 px-4 bg-gray-200 text-gray-800 border-pink border-2 outline-none placeholder-gray-500 focus:bg-gray-100"
-                  type="text" id="email" name="email" placeholder="Enter your email" required>
-                <input type="submit" value="Quiero Asistir" class="py-3 px-4 bg-pink text-cream font-semibold uppercase hover:bg-gray-600">
-              </div>
-            </form>
+      <div
+        class="flex flex-col max-w-4xl md:h-56 bg-pink rounded-lg shadow-lg overflow-hidden md:flex-row my-10 mx-auto"
+      >
+        <div
+          class="md:flex items-center justify-center md:w-1/2 md:bg-gray-700"
+        >
+          <div class="py-6 px-8 md:py-0">
+            <h2 class="font-angel text-[4rem] text-cream">Houston</h2>
+            <h2
+              class="text-cream text-[1.5rem] font-bold mt-3 md:text-gray-100"
+            >
+              Tercera Edición
+            </h2>
+            <p class="text-md mt-3">
+              ¡Prepárate para la Tercera Edición
+              <span class="text-cream font-bold">CONECTARME</span> en Houston,
+              Deja tu email para enviarte toda la información!
+            </p>
           </div>
         </div>
-        -->
-
-  <script type="module" src="main.js"></script>
-</body>
-
+        <div
+          class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 md:border-b-[#E78C98] md:border-b-8 bg-cream"
+        >
+          <form id="form-houston">
+            <p id="label-houston" class="text-pink p-2 self-start font-bold"></p>
+            <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
+              <input
+                class="py-3 px-4 bg-gray-200 text-gray-800 border-pink border-2 outline-none placeholder-gray-500 focus:bg-gray-100"
+                type="email"
+                id="email-houston"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <input
+                type="submit"
+                value="Quiero Asistir"
+                class="py-3 px-4 bg-pink text-cream font-semibold uppercase hover:bg-gray-600"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>

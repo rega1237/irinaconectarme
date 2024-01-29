@@ -10,14 +10,14 @@ const testimonialsContainer = document.getElementById("container");
 
 const testimonials = [
   {
-    name: "Mónica",
+    name: "Lina",
     photo: "assets/images/testimonial_1.png",
-    text: `“Conectarme para mí fue una experiencia y completamente transformadora. Me permití observar mis emociones y me sentí en un espacio seguro”`,
+    text: `“Jamás había asistido a un taller vivencial y para mi  fue revelador, a mis 50 años me hace sentido lo que vivo  hoy y lo que soy  y lo mejor es aprender a  decidir lo que quiero SER eligiendo el camino de mi bienestar”`,
   },
   {
-    name: "Lina",
+    name: "Mónica",
     photo: "assets/images/testimonial_2.png",
-    text: `"Jamás había asistido a un taller vivencial y para mi  fue revelador, a mis 50 años me hace sentido lo que vivo  hoy y lo que soy  y lo mejor es aprender a  decidir lo que quiero SER eligiendo el camino de mi bienestar"`,
+    text: `"Conectarme para mí fue una experiencia y completamente transformadora. Me permití observar mis emociones y me sentí en un espacio seguro"`,
   },
   {
     name: "Geraldine",

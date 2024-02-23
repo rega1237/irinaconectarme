@@ -1,622 +1,130 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/e_icon.png" />
     <link rel="stylesheet" href="index.css" />
-    <script src="https://js.stripe.com/v3/"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("476bXsavRQ_1pGv8O");
-      })();
-    </script>
-    <script
-      src="https://kit.fontawesome.com/ed14e3c3ce.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Conectarme</title>
+    <title>Irina Faneite</title>
   </head>
-  <body>
-    <nav class="relative px-4 py-4 flex justify-between items-center">
-      <div>
-        <a href="/">
-          <img
-            class="w-[150px]"
-            src="assets/images/conectarme_sin.png"
-            alt="lentes de pasta negra"
-          />
-        </a>
+  <body class="font-fah text-[#30343F]">
+    <nav>
+      <div class="flex gap-5 text-4xl font-thin justify-center pt-20">
+        <h2 class="tracking-widest">IRINA</h2>
+        <h2 class="tracking-widest">FANEITE</h2>
       </div>
-
-      <div class="lg:hidden">
-        <button class="navbar-burger flex items-center text-pink p-3">
-          <svg
-            class="block h-4 w-4 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Mobile menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-      </div>
-      <ul
-        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
-      >
-        <li>
-          <a class="text-sm text-pink font-bold hover:text-cream" href="/"
-            >Inicio</a
-          >
-        </li>
-        <li class="text-gray-300">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            class="w-4 h-4 current-fill"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-            />
-          </svg>
-        </li>
-        <li>
-          <a class="text-sm hover:text-cream" href="/pre_registro_peru.html"
-            >Pre-Registro Lima</a
-          >
-        </li>
-        <li class="text-gray-300">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            class="w-4 h-4 current-fill"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-            />
-          </svg>
-        </li>
-        <li>
-          <a
-            class="text-sm text-gray-400 hover:text-cream"
-            href="/pre_registro_miami.html"
-            >Pre-Registro Miami</a
-          >
-        </li>
-        <li class="text-gray-300">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            class="w-4 h-4 current-fill"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-            />
-          </svg>
-        </li>
-        <li>
-          <a class="text-sm hover:text-cream" href="/wait_list_online.html"
-            >ON LINE lista de espera</a
-          >
-        </li>
-        <li class="text-gray-300">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            class="w-4 h-4 current-fill"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-            />
-          </svg>
-        </li>
-        <li>
-          <a class="text-sm hover:text-cream" href="presencial.html">Houston</a>
-        </li>
+      
+      <ul class="flex justify-center pt-12 text-lg">
+        <li class="p-2 border-r border-[#30343F]"><a href="index.html">Inicio</a></li>
+        <li class="p-2 border-r border-[#30343F]">Programas</li>
+        <li class="p-2">Sesiones</li>
       </ul>
     </nav>
-    <div class="navbar-menu relative z-50 hidden">
-      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-      <nav
-        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#ffffff] overflow-y-auto"
-      >
-        <div class="flex items-center mb-8">
-          <a class="mr-auto text-3xl font-bold leading-none" href="#">
-            <img
-              class="w-[150px]"
-              src="assets/images/conectarme_sin.png"
-              alt="conectarme titulo"
-            />
-          </a>
-          <button class="navbar-close">
-            <svg
-              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div>
-          <ul>
-            <li class="mb-1">
-              <a
-                class="block p-4 text-sm font-bold text-cream bg-pink hover:text-cream rounded"
-                href="/"
-                >Inicio</a
-              >
+
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 gap-2.5 mt-12 w-[70%] text-center md:text-justify mx-auto text-xl leading-7"
+    >
+      <div class="col-span-1 self-center">
+        <h1 class="font-bold text-4xl">
+          Tu vida cambia cuando <br />
+          conectas contigo. <br />
+          <span class="text-pink">Empieza hoy.</span>
+        </h1>
+
+        <p class="text-justify mt-5">
+          Soy Irina, y he acompañado cientos de procesos emocionales de cambio
+          durante años. Como psicóloga clínica soy apasionada de la salud
+          mental, y mi trabajo es enseñarte a priorizarla y cuidarla. !Esa es la
+          base de todo! Elegir el camino del bienestar muchas veces no es facil
+          pero es la mejor decisión y si estás aqui es porque ya decidiste. Con
+          mi guía trabajaremos para:
+        </p>
+
+        <div class="mt-5 w-[90%]">
+          <ul class="px-3 text-justify">
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px]"
+                src="assets/images/list_cor.png"
+                alt="icono corazon"
+              />
+              <p>Transformar tu mentalidad</p>
             </li>
-            <li class="mb-1">
-              <a
-                class="block p-4 text-sm font-semibold hover:text-cream rounded"
-                href="/pre_registro_peru.html"
-                >Pre-Registro Lima</a
-              >
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px]"
+                src="assets/images/list_cor.png"
+                alt="icono corazon"
+              />
+              <p>Adueñarte de tus emociones</p>
             </li>
-            <li class="mb-1">
-              <a
-                class="block p-4 text-sm font-semibold hover:text-cream rounded"
-                href="/pre_registro_miami.html"
-                >Pre-Registro Miami</a
-              >
-            </li>
-            <li class="mb-1">
-              <a
-                class="block p-4 text-sm font-semibold hover:text-cream rounded"
-                href="/wait_list_online.html"
-                >ON LINE lista de espera</a
-              >
-            </li>
-            <li class="mb-1">
-              <a
-                class="block p-4 text-sm font-semibold hover:text-cream rounded"
-                href="/presencial.html"
-                >Houston</a
-              >
+            <li class="flex">
+              <img
+                class="w-[20px] h-[20px]"
+                src="assets/images/list_cor.png"
+                alt="icono corazon"
+              />
+              <p>
+                Decidir por TI, para que vivas una vidalibre, consciente y
+                ConectaDA
+              </p>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-
-    <section id="header" class="pt-11 bg-cream">
-      <div class="flex flex-col lg:flex-row items-center lg:justify-center">
-        <div class="flex w-[60%]">
+      </div>
+      <div class="col-span-1">
+        <div class="w-[70%] mx-auto md:w-full md:mx-0">
           <img
-            class="self-center"
-            src="assets/images/conectarme.png"
-            alt="conectarme titulo"
-          />
-        </div>
-        <div class="w-[30%]">
-          <img
-            src="assets/images/irina_header.png"
-            alt="Irina sosteniendo libro"
+            src="assets/images/irina_inicio.png"
+            alt="irina sentada con fondo un corazon"
+            srcset=""
           />
         </div>
       </div>
     </section>
 
-    <section id="course_CTA">
-      <div class="w-[80%] md:w-[55%] mx-auto mt-10">
-        <h2
-          class="text-pink font-kaoly text-[1.2rem] md:text-[1.3rem] text-center lg:text-[2.5rem]"
-        >
-          <span class="text-[2rem] lg:text-[3rem]">v</span>ive la experiencia de
-          activar la confianza en ti
-        </h2>
+    <section class="relative">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-2.5 py-20 w-[70%] text-center md:text-justify mx-auto"
+      >
+        <div class="hidden md:block self-center col-span-1">
+          <img src="assets/images/lentes.png" alt="Pasta de lentes negros" />
+        </div>
+
+        <div class="col-span-1">
+          <div class="flex gap-3 items-center justify-center md:justify-start">
+            <h2 class="text-4xl font-bold text-pink">Sobre mí</h2>
+            <span class="text-3xl font-thin h-line">|</span>
+            <h3 class="text-xl self-end">Psic. Irina Faneite</h3>
+          </div>
+
+          <div class="mt-6 text-xl">
+            <p>
+              Soy una mujer intensa que por mucho tiempo calló por complacer y
+              vivió al ritmo de otros. Los "deberías" eran muchos más que los
+              "yoquierono tanto", vivía una carrera de autoexigencia dañina,
+              entonces desperté y me di cuenta de que muchas de las creencias
+              que sostenía ya no se parecían a mi, no me funcionaban ni me
+              hacían feliz. Mi trabajo fue aprender a reconocer, validar y
+              mostrar mi poder y vencer el mideo a decepcionar a otros. Hoy
+              escucho y hago caso a mi intuición, abrazo las oportunidades y
+              confio en mi porque sé lo que soy y lo que no, no lo que estoy
+              dispuesta a negociar y lo que merece un NO rotundo en mi vida.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div
-        id="video"
-        class="flex justify-center lg:w-1/2 bg-pink p-5 mt-5 mx-auto lg:rounded-lg"
-      >
-        <video class="w-[80%] lg:w-[90%] h-[200px] landscape:[h-300px] lg:h-[400px]" controls autoplay>
-          <source src="assets/video/conectarme_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <div class="flex flex-col gap-5 mt-3 lg:w-[60%] mx-auto">
-        <div class="lg:w-[70%] lg:mx-auto">
-          <div class="text-center lg:text-left">
-            <h3 class="font-angel text-[2rem]">Si estás aqui sé que:</h3>
-          </div>
-          <ul class="w-[80%] mx-auto lg:mx-0 lg:w-full">
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Tienes el coraje que se requiere para hacer cambios y debloquear
-                nuevos niveles de confianza en ti.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Has trabajado mucho en ti y quieres elegirte siempre.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Sabes que sin salud mental no hay salud.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="lg:w-[70%] mx-auto">
-          <div class="text-center lg:text-left">
-            <h3 class="font-angel text-[2rem]">
-              También sé que probablemente:
-            </h3>
-          </div>
-          <ul class="w-[80%] mx-auto lg:mx-0 lg:w-full">
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Muchas veces te sientes estancada.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                La autocritica y la autoexigencia han sido parte de tu vida.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Dudas de tu poder y de mostrárselo al mundo.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Aún te cuesta decidir por ti y te encuentras decidiendo por
-                otros.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Sientes culpa y vergüenza cuando no te sientes “la buena”.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="lg:w-[70%] mx-auto">
-          <div class="text-center lg:text-left">
-            <h3 class="font-angel text-[2rem]">
-              Esta experiencia es para ti si :
-            </h3>
-          </div>
-          <ul class="w-[80%] mx-auto lg:mx-0 lg:w-full">
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Quieres aumentar tu seguridad y dejar de dudar de tu potencial.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Necesitas descubrir las creencias que limitan tu autoconfianza.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Estás lista para decir Si sin miedo y NO sin culpa.
-              </p>
-            </li>
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Prefieres ser poderosa que ser aceptada y querida por otros.
-              </p>
-            </li>
-
-            <li class="flex mt-1">
-              <div class="w-[20px]">
-                <img src="assets/images/list_cor.png" alt="check corazon" />
-              </div>
-              <p class="font-mont text-sm w-[90%]">
-                Quieres ser libre de ser TU, decidir por ti y abrazar las
-                oportunidades que la vida te da.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
+        class="absolute top-0 left-0 bg-[#746770] opacity-5 z-10 w-full h-full"
+      ></div>
     </section>
 
-    <section
-      id="points"
-      class="text-center text-sm pb-9 bg-[url('/assets/images/bubbles_1.png')] pos-bubble"
-    >
-      <div>
-        <div class="w-[40%] mt-4 mx-auto flex flex-col items-center">
-          <img src="assets/images/conectarme_sin.png" alt="conectarme" />
-          <p class="font-mont text-xs lg:text-3xl lg:mt-[-30px]">
-            está diseñado para que:
-          </p>
-        </div>
-        <div class="flex justify-center lg:w-[70%] mx-auto">
-          <img
-            src="assets/images/points_of_you_index.png"
-            alt="cuadrenos con punto"
-          />
-        </div>
-      </div>
-
-      <div class="w-[70%] mx-auto">
-        <p class="font-mont font-bold lg:w-[70%] mx-auto">
-          En esta experiencia utilizamos FACES de points of you, points of you
-          es un método de coaching
-          <span class="text-pink font-bold"
-            >que consiste en pausar, explorar, enfocar y hacer, para expandir
-            tus puntos de vista desde la emoción e intuición y la lógica.</span
-          >
-        </p>
-      </div>
-
-      <p class="mt-5 font-bold">Ya quiero que conectes contigo</p>
-
-      <p class="font-bold">Ya quiero que actives la confianza en ti</p>
-
-      <div class="mt-8 font-mont font-bold">
-        <h2 class="font-angel font-normal text-[2.5rem]">¿Estás lista?</h2>
-        <div class="w-[40%] lg:w-[20%] mx-auto text-center">
-          <img src="assets/images/lentes.png" alt="lentes pasta negra" />
-        </div>
-        <div class="flex gap-3 justify-center w-[80%] mx-auto pt-3">
-          <a
-            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
-            href="/pre_registro_peru.html"
-          >
-            <p>Pre-registro Lima</p>
-          </a>
-          <a
-            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
-            href="/pre_registro_miami.html"
-          >
-            <p>Pre-registro Miami</p>
-          </a>
-          <a
-          class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
-          href="/wait_list_online.html"
-        >
-          <p>ON LINE lista de espera</p>
-        </a>
-          <!--
-          <a
-            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
-            href="/presencial.html"
-          >
-            <p>Segunda Edición Houston</p>
-          </a>
-          <a
-            class="flex bg-pink p-3 lg:p-4 rounded-lg justify-center items-center text-cream lg:text-lg hover:cursor-pointer"
-            href="#"
-          >
-            <p>
-              Taller On-line <br />
-              Segunda Edición (Próximamente)
-            </p>
-          </a>
-          -->
-        </div>
+    <section class="bg-pink p-8 text-3xl text-[#ffff]">
+      <h4 class="text-center">Adiós desconexión</h4>
+      <div class="flex justify-center items-center gap-3">
+        <img src="assets/images/footer_cora_index.png" alt="corazon">
+        <h3 class="font-bold text-4xl">HOLA SALUD MENTAL</h3>
+        <img src="assets/images/footer_cora_index.png" alt="corazon">
       </div>
     </section>
-
-    <section id="testimonials" class="py-5">
-      <div class="text-center">
-        <h2 class="font-angel text-pink text-[5rem]">Testimonios</h2>
-      </div>
-      <!-- Swiper -->
-      <div class="swiper mySwiper w-[90%]">
-        <div id="container" class="swiper-wrapper p-5 items-center mb-5"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <section id="about" class="bg-pink pt-6">
-      <div class="w-[80%] mx-auto lg:flex lg:items-center lg:text-[0.9rem]">
-        <div
-          class="font-mont text-cream text-center font-bold pb-8 lg:pb-0 lg:text-left lg:basis-[60%]"
-        >
-          <h2 class="font-angel text-[3.5rem] text-cream pt-8 lg:pt-0">
-            Sobre mi
-          </h2>
-
-          <p>
-            Soy Irina, psicóloga clínica, acompaño procesos emocionales de
-            cambio desde hace 16 años. Trabajo con mujeres que quieren descubrir
-            sus creencias limitantes, conectarse con sus emociones y ser libres
-            de ser. Validada en EE.UU (Naces) con certificación internacional en
-            FACES Points of you.
-          </p>
-
-          <p class="mt-5">
-            He acompañado a cientos de personas a encontrar su voz y colocar
-            límites. Todas han cambiado el “debería” y “tengo que” por el
-            “quiero” y “necesito” descubriendo su identidad y autenticidad. He
-            hablado sobre el cuidado de la salud mental a miles de personas en
-            charlas y conferencias, siempre con la premisa de que “sin salud
-            mental no hay salud” y trabajar en ti es la mejor decisión”
-          </p>
-
-          <p class="mt-5">
-            Soy una mujer intensa, y por mucho tiempo viví al ritmo de otros y
-            quise agradar y complacer a todos. Aprendí a reconocer, validar y
-            mostrar mi poder, abrazando las oportunidades, sabiendo lo que soy y
-            lo que no, lo que estoy dispuesta a negociar y sobre- todo lo que
-            merece un NO rotundo en mi vida.
-          </p>
-        </div>
-
-        <div class="lg:basis-[40%] hidden basis-0 lg:block">
-          <img
-            src="assets/images/irina_silla.png"
-            alt="irina sentada banco de madera"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Main modal free class -->
-    <div
-      id="modal-free-class"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed hidden z-50 left-0 top-20 lg:top-0 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full md:backdrop-blur-sm"
-    >
-      <div class="relative md:w-[80%] top-10 mx-auto bg-cream">
-        <!-- Modal content -->
-        <div class="relative rounded-lg shadow">
-          <button
-            id="close-button-free-class"
-            type="button"
-            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
-            data-modal-hide="crypto-modal"
-          >
-            <svg
-              class="w-3 h-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-              />
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-          <!-- Modal body -->
-          <div class="w-[80%] md:w-[50%] mx-auto">
-            <img
-              src="assets/images/conectarme_sin.png"
-              alt="conectarme titulo"
-            />
-          </div>
-          <div
-            class="text-center text-[3rem] md:mb-[-1rem] lg:text-[4rem] mt-[-40px] lg:mb-[-2rem] rotate-[-5deg]"
-          >
-            <h2 class="font-angel">Audio clase</h2>
-          </div>
-          <div class="p-6 flex justify-center mt-[-30px] lg:mt-0">
-            <div
-              class="flex flex-col max-w-4xl md:h-56 bg-pink rounded-lg shadow-lg overflow-hidden md:flex-row my-10"
-            >
-              <div class="md:flex items-center justify-center md:w-[40%]">
-                <div
-                  class="py-6 px-8 md:py-0 text-[1.2rem] text-center md:text-left font-semibold"
-                >
-                  <p class="text-md mt-3">
-                    Accede a tu clase audible
-                    <span class="text-cream font-bold">GRATIS</span> <br />
-                    <span class="text-cream text-lg font-bold"
-                      >"ACTIVA TU AUTOCONFIANZA"</span
-                    >
-                    <br />
-                    ¡Deja tu correo para recibir esta audio clase!
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex items-center justify-center pb-6 md:py-0 md:w-[60%] md:border-b-[#E78C98] md:border-b-8 bg-cream"
-              >
-                <form id="contact-form">
-                  <p id="label" class="text-pink p-2 self-start font-bold"></p>
-                  <div
-                    class="flex flex-col rounded-lg overflow-hidden lg:flex-row"
-                  >
-                    <input
-                      class="py-3 px-4 bg-gray-200 text-gray-800 border-pink border-2 outline-none placeholder-gray-500 focus:bg-gray-100"
-                      type="text"
-                      id="email"
-                      name="email"
-                      placeholder="Enter your email"
-                      required
-                    />
-                    <input
-                      type="submit"
-                      value="¡Quiero recibir la audio clase!"
-                      class="py-3 px-4 input-pink text-cream font-semibold uppercase hover:bg-gray-600"
-                    />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="/javascript/testimonials.js"></script>
   </body>
 </html>

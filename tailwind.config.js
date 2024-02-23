@@ -12,6 +12,7 @@ export default {
       'angel': 'Angelface',
       'kaoly': 'Kaoly',
       'mont': ['Montserrat', 'sans-serif'],
+      'fah': ['Fahkwang', 'sans-serif']
     }
   },
   plugins: [],

@@ -21,6 +21,14 @@
   padding: 0;
 }
 
+.bg-pink {
+  background-color: #E78C98 !important;
+}
+
+.text-pink {
+  color: #E78C98 !important;
+}
+
 .pos-bubble {
   background-repeat: no-repeat;
   background-size: contain;

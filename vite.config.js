@@ -6,6 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        conectarme: resolve(__dirname, 'conectarme.html'),
         presencial: resolve(__dirname, 'presencial.html'),
         success: resolve(__dirname, 'success.html'),
         online: resolve(__dirname, 'online.html'),

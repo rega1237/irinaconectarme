@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -20,6 +21,14 @@
   padding: 0;
 }
 
+.bg-pink {
+  background-color: #E78C98 !important;
+}
+
+.text-pink {
+  color: #E78C98 !important;
+}
+
 .pos-bubble {
   background-repeat: no-repeat;
   background-size: contain;
@@ -38,6 +47,11 @@
 .testimonial-text-container{
   width: 85%;
   margin: 0 auto;
+}
+
+.h-line {
+  color: #30343F;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 800px) {

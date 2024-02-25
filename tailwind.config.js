@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.{html,js}"],
+  content: ["./*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {},
     colors: {
@@ -12,8 +12,9 @@ export default {
       'angel': 'Angelface',
       'kaoly': 'Kaoly',
       'mont': ['Montserrat', 'sans-serif'],
+      'fah': ['Fahkwang', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
 

@@ -13,6 +13,7 @@ export default defineConfig({
         pre_registro_peru: resolve(__dirname, 'pre_registro_peru.html'),
         pre_registro_miami: resolve(__dirname, 'pre_registro_miami.html'),
         wait_list_online: resolve(__dirname, 'wait_list_online.html'),
+        masterclass: resolve(__dirname, 'masterclass.html'),
         main_js: './main.js',
         peru: './javascript/pre_register_peru.js',
         miami: './javascript/pre_register_miami.js',
@@ -20,6 +21,8 @@ export default defineConfig({
         navbar: './javascript/navbar.js',
         houston: './javascript/subscriptionHouston.js',
         testimonials: './javascript/testimonials.js',
+        menu_mobile_submenus: './javascript/mobile_menu_dropdown.js',
+        online: './javascript/online.js'
       },
     },
   },

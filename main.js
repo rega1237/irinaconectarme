@@ -3,19 +3,32 @@ import navBar from "./javascript/navbar";
 import sendMailMiami from "./javascript/pre_register_miami";
 import sendMailOnline from "./javascript/waitListOnline";
 import sendMailHouston from "./javascript/subscriptionHouston";
-import {showSubmenus} from "./javascript/mobile_menu_dropdown";
+import { showSubmenus } from "./javascript/mobile_menu_dropdown";
+import modalOnlinePrices from "./javascript/online";
 
 const currentUrl = window.location.href;
 
-navBar();
-showSubmenus();
 
-if(currentUrl.includes("peru")) {
+
+if (currentUrl.includes("peru")) {
   sendMailPeru();
-} else if(currentUrl.includes("miami")) {
+  navBar();
+  showSubmenus();
+} else if (currentUrl.includes("miami")) {
+  navBar();
+  showSubmenus();
   sendMailMiami();
-} else if(currentUrl.includes("list_online")) {
+} else if (currentUrl.includes("list_online")) {
+  navBar();
+  showSubmenus();
   sendMailOnline();
-} else if(currentUrl.includes("presencial")) {
+} else if (currentUrl.includes("presencial")) {
+  navBar();
+  showSubmenus();
   sendMailHouston();
+} else if (currentUrl.includes("masterclass")) {
+  modalOnlinePrices();
+} else if (currentUrl.includes("conectarme")) {
+  navBar();
+  showSubmenus();
 }

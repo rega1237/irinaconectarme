@@ -6,11 +6,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import testimonial_1 from "../assets/images/testimonial_1.png";
-import testimonial_2 from "../assets/images/testimonial_2.png";
-import testimonial_3 from "../assets/images/testimonial_3.png";
-import testimonial_4 from "../assets/images/testimonial_4.png";
-import testimonial_5 from "../assets/images/testimonial_5.png";
+import testimonial_1 from "../assets/images/testimonial_1.webp";
+import testimonial_2 from "../assets/images/testimonial_2.webp";
+import testimonial_3 from "../assets/images/testimonial_3.webp";
+import testimonial_4 from "../assets/images/testimonial_4.webp";
+import testimonial_5 from "../assets/images/testimonial_5.webp";
 
 const testimonialsContainer = document.getElementById("container");
 
@@ -130,7 +130,7 @@ testimonials.forEach((testimonial) => {
             <div class="flex gap-5 items-center p-5">
               <img
                 class="max-w-[70px]"
-                src="assets/images/testimonial_1.png"
+                src="assets/images/testimonial_1.webp"
                 alt=""
               />
 
@@ -158,7 +158,7 @@ testimonials.forEach((testimonial) => {
             <div class="flex gap-5 items-center p-5">
               <img
                 class="max-w-[70px]"
-                src="assets/images/testimonial_2.png"
+                src="assets/images/testimonial_2.webp"
                 alt=""
               />
 
@@ -186,7 +186,7 @@ testimonials.forEach((testimonial) => {
             <div class="flex gap-5 items-center p-5">
               <img
                 class="max-w-[70px]"
-                src="assets/images/testimonial_3.png"
+                src="assets/images/testimonial_3.webp"
                 alt=""
               />
 
@@ -214,7 +214,7 @@ testimonials.forEach((testimonial) => {
             <div class="flex gap-5 items-center p-5">
               <img
                 class="max-w-[70px]"
-                src="assets/images/testimonial_4.png"
+                src="assets/images/testimonial_4.webp"
                 alt=""
               />
 

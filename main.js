@@ -4,11 +4,8 @@ import sendMailMiami from "./javascript/pre_register_miami";
 import sendMailOnline from "./javascript/waitListOnline";
 import sendMailHouston from "./javascript/subscriptionHouston";
 import { showSubmenus } from "./javascript/mobile_menu_dropdown";
-import modalOnlinePrices from "./javascript/online";
 
 const currentUrl = window.location.href;
-
-
 
 if (currentUrl.includes("peru")) {
   sendMailPeru();
@@ -26,8 +23,6 @@ if (currentUrl.includes("peru")) {
   navBar();
   showSubmenus();
   sendMailHouston();
-} else if (currentUrl.includes("masterclass")) {
-  modalOnlinePrices();
 } else if (currentUrl.includes("conectarme")) {
   navBar();
   showSubmenus();

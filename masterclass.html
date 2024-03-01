@@ -59,7 +59,10 @@
       <div class="col-span-1 self-center">
         <div class="grid grid-cols-2 gap-5 pb-5 px-4">
           <div class="col-span-2 w-[60%] mx-auto">
-            <img src="assets/images/masterclass.webp" alt="titulo adios desconexion hola salud mental" />
+            <img
+              src="assets/images/masterclass.webp"
+              alt="titulo adios desconexion hola salud mental"
+            />
           </div>
           <div class="cols-span-1 flex justify-end items-center">
             <div class="basis-[30%] lg:basis-[20%]">
@@ -111,138 +114,17 @@
               <img src="assets/images/lentes.webp" alt="lentes pasta negra" />
             </div>
             <div class="flex justify-center w-[80%] mx-auto pt-3 gap-4">
-              <button
-                id="button-show-taller"
+              <a
                 class="flex bg-pink p-3 lg:p-3 rounded-lg justify-center items-center text-cream lg:text-xl hover:cursor-pointer"
-                title="COMPRAR ENTRADA"
+                href="https://buy.stripe.com/14k3cE3Dhbd2bo44gs"
               >
                 COMPRAR ENTRADA
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Main modal TALLER-->
-    <div
-      id="modal-taller"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed hidden top-[10%] lg:top-[10%] left-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full"
-    >
-      <div class="relative mx-auto w-full max-w-md max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-cream rounded-lg shadow dark:bg-gray-700">
-          <button
-            id="close-button-taller"
-            type="button"
-            class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-hide="crypto-modal"
-          >
-            <svg
-              class="w-3 h-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-              />
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-          <!-- Modal header -->
-          <div class="px-6 py-4 border-b rounded-t dark:border-gray-600">
-            <h3
-              class="text-base font-semibold text-gray-900 lg:text-xl dark:text-white"
-            >
-              Selecciona tu moneda local
-            </h3>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6">
-            <ul class="my-4 space-y-3">
-              <li>
-                <a
-                  href="https://buy.stripe.com/14k3cE3Dhbd2bo44gs"
-                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                >
-                  <div class="w-[10%]">
-                    <img
-                      src="./assets/images/usa_flag.webp"
-                      alt="bandera estados unidos"
-                    />
-                  </div>
-                  <span class="flex-1 ml-3 whitespace-nowrap">USD</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://buy.stripe.com/6oE14wehVch6gIo14i"
-                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                >
-                  <div class="w-[10%]">
-                    <img
-                      src="./assets/images/spain_flag.webp"
-                      alt="bandera de espana"
-                    />
-                  </div>
-                  <span class="flex-1 ml-3 whitespace-nowrap">EUR</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://buy.stripe.com/aEU14w3Dhdla4ZG9AQ"
-                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                >
-                  <div class="w-[10%]">
-                    <img
-                      src="assets/images/peru_flag.webp"
-                      alt="bandera de peru"
-                    />
-                  </div>
-                  <span class="flex-1 ml-3 whitespace-nowrap">PEN</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://buy.stripe.com/4gw00s3Dh3KA0JqfZb"
-                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                >
-                  <div class="w-[10%]">
-                    <img
-                      src="assets/images/colombia_flag.webp"
-                      alt="bandera de colombia"
-                    />
-                  </div>
-                  <span class="flex-1 ml-3 whitespace-nowrap">COP</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://buy.stripe.com/eVa9B24Hlfti4ZGfZd"
-                  class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                >
-                  <div class="w-[10%]">
-                    <img
-                      src="assets/images/chile_flag.webp"
-                      alt="bandera de chile"
-                    />
-                  </div>
-                  <span class="flex-1 ml-3 whitespace-nowrap">CLP</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script type="module" src="main.js"></script>
   </body>

@@ -2,7 +2,11 @@
 export default {
   content: ["./*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'lg-landscape': {'raw': '(min-width: 1015px) and (orientation: landscape)'},
+      },
+    },
     colors: {
       'pink': '#E78C98',
       'cream': '#FAF0EE',

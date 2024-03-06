@@ -16,7 +16,8 @@ export default {
       'angel': 'Angelface',
       'kaoly': 'Kaoly',
       'mont': ['Montserrat', 'sans-serif'],
-      'fah': ['Fahkwang', 'sans-serif']
+      'fah': ['Fahkwang', 'sans-serif'],
+      'maid': 'Mermaid',
     }
   },
   plugins: [require('flowbite/plugin')],

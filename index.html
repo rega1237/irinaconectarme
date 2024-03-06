@@ -2,7 +2,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="assets/images/lentes_icon.webp" />
+    <link rel="preload" href="index.css" as="style" />
+    <link rel="stylesheet" href="index.css">
     <title>Irina Faneite</title>
   </head>
   <body class="font-fah text-[#30343F]">
@@ -122,6 +124,7 @@
       </div>
       <div class="col-span-1 flex justify-center landscape:lg:self-end">
         <img
+        fetchpriority="high"
         class="landscape:w-[50%] md:w-[50%] landscape:lg:w-full"
         src="assets/images/irina_inicio.webp"
         alt="irina sentada con fondo un corazon"

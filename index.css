@@ -60,3 +60,13 @@
   }
 }
 
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .irina-img-container {
+    align-self: end;
+  }
+  
+  .irina-desk {
+    width: 100% !important;
+  }
+}

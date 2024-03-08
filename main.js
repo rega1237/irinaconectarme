@@ -7,7 +7,11 @@ import { showSubmenus } from "./javascript/mobile_menu_dropdown";
 
 const currentUrl = window.location.href;
 
-if (currentUrl.includes("peru")) {
+if (currentUrl === 'https://irinafaneite.com/') {
+  navBar();
+  showSubmenus();
+}
+else if (currentUrl.includes("peru")) {
   sendMailPeru();
   navBar();
   showSubmenus();

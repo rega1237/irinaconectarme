@@ -14,7 +14,7 @@ export default defineConfig({
         pre_registro_miami: resolve(__dirname, 'pre_registro_miami.html'),
         wait_list_online: resolve(__dirname, 'wait_list_online.html'),
         masterclass: resolve(__dirname, 'masterclass.html'),
-        sesion: resolve(__dirname, 'sesion1:1.html'),
+        sesion: resolve(__dirname, 'sesion1_1.html'),
         success_sesion: resolve(__dirname, 'success_sesion.html'),
         main_js: './main.js',
         peru: './javascript/pre_register_peru.js',

@@ -69,4 +69,8 @@
   .irina-desk {
     width: 100% !important;
   }
+
+  .irina-text-container {
+    padding: 2rem 0 !important;
+  }
 }

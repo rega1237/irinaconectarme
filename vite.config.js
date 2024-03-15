@@ -16,6 +16,7 @@ export default defineConfig({
         masterclass: resolve(__dirname, 'masterclass.html'),
         sesion: resolve(__dirname, 'sesion1_1.html'),
         success_sesion: resolve(__dirname, 'success_sesion.html'),
+        conectada: resolve(__dirname, 'conectada.html'),
         main_js: './main.js',
         peru: './javascript/pre_register_peru.js',
         miami: './javascript/pre_register_miami.js',

@@ -61,12 +61,20 @@
 }
 
 
-@media (min-width: 1024px) and (orientation: landscape) {
+@media (min-width: 1024px) and (orientation: landscape) and (pointer: coarse) {
   .irina-img-container {
     align-self: end;
   }
   
   .irina-desk {
     width: 100% !important;
+  }
+
+  .irina-text-container {
+    padding: 2rem 0 !important;
+  }
+
+  .hide-on-landspace {
+    display: none;
   }
 }
